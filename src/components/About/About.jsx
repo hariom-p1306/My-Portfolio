@@ -132,12 +132,12 @@ const About = () => {
           </h3>
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-8 mt-6 leading-relaxed">
             I am a passionate Full Stack Developer focused on building scalable and user-friendly web applications.
-            I actively practice Data Structures and Algorithms and have solved 100+ problems on LeetCode.
+            I actively practice Data Structures and Algorithms and have solved 150+ problems on LeetCode.
             This has improved my logical thinking, problem-solving ability, and coding discipline.
             I believe in consistency, practical learning, and continuous self-improvement.
           </p>
           <a
-            href="https://drive.google.com/file/d/1YHTWgmtA2h1mV4jd0GfuI83-1kbFJpGJ/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1KJs1ZOG0Ut774pLgGNfPB-m5jU7n4kbZ/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -146,7 +146,7 @@ const About = () => {
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
             }}
           >
-            DOWNLOAD CV
+            DOWNLOAD RESUME
           </a>
         </div>
 
