@@ -137,7 +137,7 @@ const About = () => {
             I believe in consistency, practical learning, and continuous self-improvement.
           </p>
           <a
-            href="https://drive.google.com/file/d/16mHWn7ttU0JgzEMor-EcVEf8PELOdMCC/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1Jv6UFtR9pDujGwWZgEKeD3821MqYoEJM/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
