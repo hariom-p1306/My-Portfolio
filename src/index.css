@@ -1,4 +1,4 @@
-
+/* 
 
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
@@ -46,4 +46,95 @@
 
 
 
+ */
 
+
+ @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: 'Saira', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------- THEME COLORS ---------------- */
+@theme{
+  --color-dark-100:#0f0f1a;
+  --color-dark-200:#161625;
+  --color-dark-300:#1f1f35;
+  --color-dark-400:#2a2a45;
+
+  --color-purple:#8B5CF6;
+  --color-pink:#EC4899;
+  --color-blue:#3B82F6;
+}
+
+/* ---------------- SMOOTH SCROLL ---------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------- PREMIUM BLOB ANIMATION ---------------- */
+@keyframes blobPremium {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(40px, -60px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.95);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob-premium {
+  animation: blobPremium 14s ease-in-out infinite;
+}
+
+/* ---------------- SOFT GLOW TEXT ---------------- */
+.glow-text {
+  text-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+}
+
+/* ---------------- GLASS CARD EFFECT ---------------- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 20px;
+}
+
+/* ---------------- BUTTON HOVER PREMIUM ---------------- */
+.premium-btn {
+  transition: all 0.3s ease;
+}
+
+.premium-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+}
+
+/* ---------------- TYPEWRITER ---------------- */
+.typewriter{
+  overflow: hidden;
+  border-right: 0.15rem solid #8B5CF6;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(20, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing{
+  from {width: 0;}
+  to {width: 15ch;}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #8B5CF6; }
+}

@@ -15,6 +15,8 @@ import mysqlLogo from '../assets/tech_logo/mysql.png';
 import mongodbLogo from '../assets/tech_logo/mongodb.png';
 
 import cLogo from '../assets/tech_logo/c.png';
+import  muiLogo from '../assets/tech_logo/materialUI.png';
+import  websocketLogo from '../assets/tech_logo/socketIO.png';
 
 import javaLogo from '../assets/tech_logo/java.png';
 import pythonLogo from '../assets/tech_logo/python.png';
@@ -27,73 +29,108 @@ import postmanLogo from '../assets/tech_logo/postman.png';
 import vercelLogo from '../assets/tech_logo/vercel.png';
 
 
+
 // Project Section Logos
+import meetsync from  '../assets/work_logo/webRTC.png';
 import airbnblogo from '../assets/work_logo/airbnb.png';
 import myportfolio from '../assets/work_logo/myportfolio.png';
 
+
 export const SkillsInfo = [
   {
-    title: 'Frontend',
+    title: "Frontend",
     skills: [
-      { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'React JS', logo: reactjsLogo },
-      { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      { name: 'Bootstrap', logo: bootstrapLogo },
+      { name: "HTML", logo: htmlLogo },
+      { name: "CSS", logo: cssLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "React", logo: reactjsLogo },
+      { name: "Tailwind CSS", logo: tailwindcssLogo },
+      { name: "Material UI", logo: muiLogo },   // ADD THIS
+      { name: "Bootstrap", logo: bootstrapLogo },
     ],
   },
+
   {
-    title: 'Backend',
+    title: "Backend",
     skills: [
-      { name: 'Node JS', logo: nodejsLogo },
-      { name: 'Express JS', logo: expressjsLogo },
-      { name: 'MySQL', logo: mysqlLogo },
-      { name: 'MongoDB', logo: mongodbLogo },
+      { name: "Node.js", logo: nodejsLogo },
+      { name: "Express.js", logo: expressjsLogo },
+      { name: "WebSocket", logo: websocketLogo }, // ADD THIS
+      { name: "MongoDB", logo: mongodbLogo },
+      { name: "MySQL", logo: mysqlLogo },
     ],
   },
+
   {
-    title: 'Languages',
+    title: "Languages",
     skills: [
-      { name: 'C', logo: cLogo },
-      { name: 'Java', logo: javaLogo },
-      { name: 'Python', logo: pythonLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "Java", logo: javaLogo },
+      { name: "Python", logo: pythonLogo },
+      { name: "C", logo: cLogo },
     ],
   },
+
   {
-    title: 'Tools',
+    title: "Tools",
     skills: [
-      { name: 'Git', logo: gitLogo },
-      { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
-      { name: 'Postman', logo: postmanLogo },
-      { name: 'Vercel', logo: vercelLogo },
+      { name: "Git", logo: gitLogo },
+      { name: "GitHub", logo: githubLogo },
+      { name: "Postman", logo: postmanLogo },
+      { name: "VS Code", logo: vscodeLogo },
+      { name: "Vercel", logo: vercelLogo },
     ],
   },
 ];
 
- 
- 
-  export const projects = [
-    {
-      id: 0,
-      title: "Airbnb Full-Stack Booking Platform",
-      description:
-        "A full-stack web application that allows users to browse, list, and book rental properties. Built using MVC architecture with secure authentication, CRUD operations, and responsive UI. Implemented RESTful APIs, user authorization, and database relationships to manage bookings and listings efficiently.",
-      image: airbnblogo,
-      tags: ["HTML", "CSS", "JavaScript","EJS","Bootstrap", "React JS","Node.js","Express.js","MongoDB","MVC Architecture","REST API","Authentication","Authorization",],
-      github: "https://github.com/hariom-p1306/AirBnb-Full-Stack-Project-.git",
-      webapp: "https://airbnb-full-stack-project-e7eq.onrender.com/listings",
-    },
-      {
-      id: 1,
-      title: "Hariom Patel – Developer Portfolio",
-      description:
-       "A modern and responsive portfolio website showcasing the projects, skills, and achievements of Hariom Patel, a passionate Full Stack Developer. Built with React, TailwindCSS, and JavaScript, featuring interactive UI components, smooth scrolling, and a contact form integrated with EmailJS. Designed to demonstrate technical skills, creativity, and professional experience.",
-      image: myportfolio,
-      tags: ["HTML","React ","JavaScript","TailwindCSS"],
-      github: "https://github.com/hariom-p1306/My-Portfolio.git",
-      webapp: "https://my-portfolio-three-ivory-72.vercel.app/",
-    },
-  ];
+
+
+export const projects = [
+  {
+    id: 1,
+    title: "MeetSync – Real-Time Video Conferencing Platform",
+    description:
+      "Engineered a scalable real-time video conferencing system using WebRTC and Socket.io with secure peer-to-peer communication, room-based architecture, SDP/ICE negotiation, and low-latency performance.",
+    image: meetsync,
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "WebRTC",
+      "Socket.io",
+      "MongoDB"
+    ],
+    github: "https://github.com/hariom-p1306/MeetSync-Secure-WebRTC-Video-Conferencing",
+    webapp: "https://meetsync-secure-webrtc-video.onrender.com/",
+  },
+
+  {
+    id: 2,
+    title: "Airbnb Full-Stack Booking Platform",
+    description:
+      "Developed a full-stack booking platform using MVC architecture with secure authentication, CRUD operations, REST APIs, and optimized MongoDB queries for efficient reservation management.",
+    image: airbnblogo,
+    tags: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "EJS",
+      "Bootstrap",
+      "Authentication",
+      "REST API"
+    ],
+    github: "https://github.com/hariom-p1306/AirBnb-Full-Stack-Project-.git",
+    webapp: "https://airbnb-full-stack-project-e7eq.onrender.com/listings",
+  },
+
+  {
+    id: 3,
+    title: "Developer Portfolio",
+    description:
+      "A modern responsive portfolio built with React and TailwindCSS featuring interactive UI components, smooth scrolling, and EmailJS integration for contact functionality.",
+    image: myportfolio,
+    tags: ["React", "TailwindCSS", "JavaScript", "EmailJS"],
+    github: "https://github.com/hariom-p1306/My-Portfolio.git",
+    webapp: "https://my-portfolio-three-ivory-72.vercel.app/",
+  },
+];
