@@ -257,7 +257,7 @@ const About = () => {
             <div className="flex items-start gap-4">
               <FaCube className="text-yellow-400 mt-1" />
               <p>
-                Solved <span className="text-yellow-400">190+ LeetCode</span> problems.
+                Solved <span className="text-yellow-400">200+ LeetCode</span> problems.
               </p>
             </div>
 
@@ -307,14 +307,14 @@ const About = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-center gap-8">
 
           <div className="flex-1">
-            <h3 className="text-2xl md:text-3xl font-bold text-purple-400">190+</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-purple-400">200+</h3>
             <p className="text-gray-400 text-sm md:text-base">LeetCode Problems</p>
           </div>
 
           <div className="hidden md:block w-px h-16 bg-purple-500/20"></div>
 
           <div className="flex-1">
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-400">2+</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-blue-400">4+</h3>
             <p className="text-gray-400 text-sm md:text-base">Major Projects</p>
           </div>
 
