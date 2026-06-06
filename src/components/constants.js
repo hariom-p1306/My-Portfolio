@@ -154,7 +154,7 @@ export const projects = [
       "AI Integration",
     ],
     github: "https://github.com/hariom-p1306/PlacementPrepAI",
-    webapp: "https://placement-prep-ai-ft14-5yhmhwyuj.vercel.app/",
+    webapp: "https://placement-prep-ai-ft14.vercel.app/",
     featured: true,
   },
   {
